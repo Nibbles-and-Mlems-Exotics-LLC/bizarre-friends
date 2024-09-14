@@ -34,7 +34,11 @@ body:
       value: |
         ## Example
         Title: [Feature]: Add Bulk Animal Import and Export Feature
+        
         Description: It would be helpful for breeders who manage large groups of animals to have a way to import and export animal data in bulk.
+        
         Purpose: This would save time when setting up the system and allow easy data transfer between breeders.
+        
         Audience: breeders
+        
         Additional context: Many breeders already use spreadsheets to manage their animal data, so importing this data directly would streamline onboarding.
