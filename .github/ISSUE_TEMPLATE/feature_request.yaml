@@ -4,9 +4,6 @@ title: "[Feature]: "
 labels: ["feature"]
 projects: ["Nibbles-and-Mlems-Exotics-LLC/2"]
 body:
-  - type: markdown
-    attributes:
-      value: "# Feature Request"
   - type: textarea
     attributes:
       label: Description
