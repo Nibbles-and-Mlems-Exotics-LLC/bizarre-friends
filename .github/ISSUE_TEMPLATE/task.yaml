@@ -1,0 +1,26 @@
+name: General Task
+description: Non-functional work
+title: "[Task]: "
+labels: ["task"]
+projects: ["Nibbles-and-Mlems-Exotics-LLC/2"]
+body:
+  - type: textarea
+    attributes:
+      label: Description
+      description: What is the task and why is it needed?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Please provide any additional information that might be useful.
+  - type: markdown
+    attributes:
+      value: |
+        ## Example
+        Title: [Task]: Upgrade Node.js to v16 in the application
+        
+        Description: The current version of Node.js is outdated (v12). Upgrading to v16 is required to take advantage of new features and improve security.
+        
+        Additional context: May impact feature #42 (API sync).
+        
