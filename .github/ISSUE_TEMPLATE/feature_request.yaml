@@ -1,0 +1,40 @@
+name: Feature Request
+description: Request a new feature.
+title: "[Feature]: "
+labels: ["feature"]
+projects: ["Nibbles-and-Mlems-Exotics-LLC/2"]
+body:
+  - type: markdown
+    attributes:
+      value: "# Feature Request"
+  - type: textarea
+    attributes:
+      label: Description
+      description: What is the desired functionality? 
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Purpose
+      description: What is the expected benefit of this feature?
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Audience
+      description: Who would benefit from the feature (e.g. everyone, breeders, care providers)?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Please provide any additional information that might be useful.
+  - type: markdown
+    attributes:
+      value: |
+        ## Example
+        Title: [Feature]: Add Bulk Animal Import and Export Feature
+        Description: It would be helpful for breeders who manage large groups of animals to have a way to import and export animal data in bulk.
+        Purpose: This would save time when setting up the system and allow easy data transfer between breeders.
+        Audience: breeders
+        Additional context: Many breeders already use spreadsheets to manage their animal data, so importing this data directly would streamline onboarding.
