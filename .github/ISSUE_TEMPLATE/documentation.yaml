@@ -1,0 +1,34 @@
+name: Documentation Request
+description: Request new/updated documentation.
+title: "[Documentation]: "
+labels: ["documentation"]
+projects: ["Nibbles-and-Mlems-Exotics-LLC/2"]
+body:
+  - type: textarea
+    attributes:
+      label: Description
+      description: What is the desired functionality? 
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Audience
+      description: Who would benefit from the feature (e.g. users, developers, both)?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Please provide any additional information that might be useful.
+  - type: markdown
+    attributes:
+      value: |
+        ## Example
+        Title: [Documentation]: Create user guide for setting up data sync across devices
+        
+        Description: Document the process for users to set up and configure the data sync feature in the application, including troubleshooting common issues.
+        
+        Audience: end users
+        
+        Additional context: This feature is new, so detailed documentation is crucial to reduce support requests.
+        
