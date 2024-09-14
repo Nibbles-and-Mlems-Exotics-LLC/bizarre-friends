@@ -1,6 +1,7 @@
 name: Bug Report
 description: Document an unexpected behavior
 title: "[Bug]: "
+labels: ["bug"]
 projects: ["Nibbles-and-Mlems-Exotics-LLC/2"]
 body:
   - type: textarea
