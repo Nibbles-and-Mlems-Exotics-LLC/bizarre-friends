@@ -1,11 +1,11 @@
 # Cross platform development framework
 
-* Status: proposed
+* Status: accepted
 * Date: 2024-09-20
 
 ## Context and Problem Statement
 
-Choos a cross platform development framework that supports Linux, Windows, Mac, Android, and iOS
+Choose a cross platform development framework that supports Linux, Windows, Mac, Android, and iOS
 
 ## Considered Options
 
