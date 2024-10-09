@@ -4,9 +4,9 @@
 
 Support will only be provided for the latest version until v1.0.0 is released.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| latest  | :white_check_mark: |
+| Version | Supported |
+| ------- | --------- |
+| latest  | ✅        |
 
 ## Reporting a Vulnerability
 
