@@ -1,0 +1,10 @@
+{
+	"$schema": "https://json.schemastore.org/prettierrc.json",
+	"useTabs": true,
+	"tabWidth": 4,
+	"singleQuote": true,
+	"quoteProps": "consistent",
+	"plugins": ["prettier-plugin-svelte"],
+    "overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }],
+	"experimentalTernaries": true
+}
