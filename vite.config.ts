@@ -1,18 +1,17 @@
-import { defineConfig } from 'vite';
+import type { UserConfig } from 'vite';
 import { sveltekit } from '@sveltejs/kit/vite';
+import process, { env } from 'process';
 
-// @ts-expect-error process is a nodejs global
-const host = process.env.TAURI_DEV_HOST;
+const host: string = process.env['TAURI_DEV_HOST'] ?? 'localhost';
 
-// https://vitejs.dev/config/
-export default defineConfig(async () => ({
+const environment: string =
+	process.env['ENVIRONMENT']?.toLowerCase() ?? 'production';
+const isProduction: boolean = environment === 'production';
+
+export default {
+	mode: environment,
 	plugins: [sveltekit()],
-
-	// Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
-	//
-	// 1. prevent vite from obscuring rust errors
 	clearScreen: false,
-	// 2. tauri expects a fixed port, fail if that port is not available
 	server: {
 		port: 1420,
 		strictPort: true,
@@ -26,8 +25,11 @@ export default defineConfig(async () => ({
 				}
 			:	undefined,
 		watch: {
-			// 3. tell vite to ignore watching `src-tauri`
 			ignored: ['**/src-tauri/**'],
 		},
 	},
-}));
+	build: {
+		minify: isProduction,
+		cssMinify: isProduction,
+	},
+} satisfies UserConfig;

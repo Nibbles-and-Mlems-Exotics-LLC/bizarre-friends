@@ -1,10 +1,41 @@
 {
-	"$schema": "https://json.schemastore.org/prettierrc.json",
-	"useTabs": true,
-	"tabWidth": 4,
+	"$schema": "https://json.schemastore.org/prettierrc",
+	"arrowParens": "always",
+	"bracketSameLine": false,
+	"bracketSpacing": true,
+	"embeddedLanguageFormatting": "auto",
+	"endOfLine": "lf",
+	"experimentalTernaries": true,
+	"htmlWhitespaceSensitivity": "css",
+	"overrides": [
+		{
+			"files": "*.svelte",
+			"options": {
+				"parser": "svelte"
+			}
+		},
+		{
+			"files": ["*.yml", "*.yaml"],
+			"options": {
+				"tabWidth": 2,
+				"useTabs": false
+			}
+		},
+		{
+			"files": ["*.md", "*.markdown"],
+			"options": {
+				"tabWidth": 4,
+				"useTabs": false
+			}
+		}
+	],
+	"printWidth": 120,
+	"proseWrap": "preserve",
+	"quoteProps": "as-needed",
+	"semi": true,
+	"singleAttributePerLine": false,
 	"singleQuote": true,
-	"quoteProps": "consistent",
-	"plugins": ["prettier-plugin-svelte"],
-    "overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }],
-	"experimentalTernaries": true
+	"tabWidth": 4,
+	"trailingComma": "all",
+	"useTabs": true
 }

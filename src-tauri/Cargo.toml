@@ -1,24 +1,28 @@
 [package]
 name = "bizarre-friends"
 version = "0.1.0"
-description = "A user-friendly, cross-platform tool tailored for breeders of all kinds of animals"
-authors = ["Nibbles and Mlems Exotics LLC"]
-edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "A Tauri App"
+authors = ["you"]
+edition = "2024"
 
 [lib]
-# The `_lib` suffix may seem redundant but it is necessary
-# to make the lib name unique and wouldn't conflict with the bin name.
-# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
 name = "bizarre_friends_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]
-tauri-build = { version = "2.0.5", features = [] }
+tauri-build = { version = "2", features = ["isolation"] }
 
 [dependencies]
-tauri = { version = "2.2.5", features = [] }
-tauri-plugin-shell = "2.2.0"
-serde = { version = "1.0.217", features = ["derive"] }
-serde_json = "1.0.138"
+dirs = "6.0.0"
+sea-orm = { version = "1", features = [
+	"runtime-tokio-native-tls",
+	"sqlx-sqlite",
+	"with-chrono",
+	"with-json",
+	"with-uuid",
+] }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1" }
+tauri = { version = "2", features = ["isolation"] }
+tauri-plugin-opener = { version = "2" }
+tokio = { version = "1", features = ["full"] }

@@ -1,10 +1,10 @@
 # Bizarre Friends
 
-# Introduction
+## Introduction
 
 Bizarre Friends is a user-friendly, cross-platform tool tailored for breeders of all kinds of animals. It allows users to manage animal health records, breeding logs, and care schedules all in one place. Designed to work offline, the application offers seamless data organization without requiring internet access, with optional features for syncing data across devices and accessing online services. With a focus on simplicity and efficiency, it provides breeders with the tools they need to ensure the well-being and proper management of their animals.
 
-# Goals
+## Goals
 
 1. **Support for Diverse Animals, Including Exotics**  
    Develop a versatile tool that allows breeders to efficiently manage the care, breeding, and health records of various animals, particularly exotic pets. The tool will offer intuitive tracking and organizational features to meet the needs of breeders across a wide range of species.
@@ -24,11 +24,11 @@ Bizarre Friends is a user-friendly, cross-platform tool tailored for breeders of
 6. **Enhance Post-Sale Customer Interaction and Retention**  
    Without turning the tool into a CRM, provide offline features to improve education, sale, and post-sale interactions with customers.
 
-# Getting started
- 
- [Installation](https://github.com/Nibbles-and-Mlems-Exotics-LLC/bizarre-friends/wiki/Installation)
+## Getting started
 
-# Platforms
+ [Installation](/wiki/Installation)
+
+## Platforms
 
 Bizarre Friends is built on [Tauri 2](https://v2.tauri.app/) and supports the following platforms:
 
@@ -40,14 +40,23 @@ Bizarre Friends is built on [Tauri 2](https://v2.tauri.app/) and supports the fo
 | iOS/iPadOS (beta) | 9 and above                                        |
 | Android (beta)    | 7 and above                                        |
 
-# Contributing
+## Contributing
 
-Before you start working on something, it's best to check if there is an existing issue first. It's also a good idea to stop by the Discord server and confirm with the team if it makes sense or if someone else is already working on it.
-
-Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before making a pull request.
+Before you start working on something, it's best to check if there is an existing [discussion](/discussions) or [issue](/issues) first. Please make sure to read the [Contributing Guide](CONTRIBUTING.md).
 
 Thank you to everyone contributing to Bizarre Friends!
 
-# Documentation
+## Documentation
 
-We use the GitHub wiki for this project for [documentation](https://github.com/Nibbles-and-Mlems-Exotics-LLC/bizarre-friends/wiki).
+We use the GitHub wiki for this project for [documentation](/wiki).
+
+## Legal
+
+Bizarre Friends
+Copyright (C) 2025 Nibbles and Mlems LLC.
+
+This program is free software: you can redistribute it and/or modify it under the terms of the [GNU General Public License](LICENSE.md) as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License  along with this program.  If not, see <http://www.gnu.org/licenses/>.
