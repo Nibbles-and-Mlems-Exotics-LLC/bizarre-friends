@@ -1,8 +1,8 @@
 [package]
 name = "bizarre-friends"
-version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
+version = "1.0.0-alpha"
+description = "A user-friendly, cross-platform tool tailored for breeders of all kinds of animals"
+authors = ["JEleniel (https://github.com/JEleniel)"]
 edition = "2024"
 
 [lib]
@@ -17,6 +17,7 @@ dirs = "6.0.0"
 sea-orm = { version = "1", features = [
 	"runtime-tokio-native-tls",
 	"sqlx-sqlite",
+	"macros",
 	"with-chrono",
 	"with-json",
 	"with-uuid",
