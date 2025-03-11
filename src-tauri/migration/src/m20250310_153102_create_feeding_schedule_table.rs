@@ -33,9 +33,11 @@ impl MigrationTrait for Migration {
 }
 
 #[derive(DeriveIden)]
-enum Post {
+enum FeedingSchedule {
     Table,
     Id,
-    Title,
-    Text,
+    Amount,
+    Units,
+    PerAmount,
+    PerUnits,
 }
