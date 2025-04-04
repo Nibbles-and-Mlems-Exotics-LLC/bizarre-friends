@@ -23,10 +23,12 @@
 		"ul_multi": 1,
 		"ul_single": 1
 	},
-	"no-hard-tabs": {
-		"code_blocks": false,
-		"spaces_per_tab": 4
+	"no-duplicate-heading": {
+		"siblings_only": true
 	},
+	"no-hard-tabs": false,
+	"no-inline-html": true,
+	"no-space-in-code": false,
 	"no-trailing-spaces": {
 		"br_spaces": 0,
 		"strict": true
@@ -42,7 +44,7 @@
 		"style": "leading_and_trailing"
 	},
 	"ul-indent": {
-		"indent": 4
+		"indent": 1
 	},
 	"ul-style": {
 		"style": "sublist"
